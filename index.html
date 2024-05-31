@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+.bgimg {
+  background-image: url('4.jpg');
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+</style>
+<script>
+function checkPassword(event) {
+  event.preventDefault(); // Prevent the form from submitting
+  const password = document.getElementById('password').value;
+  if (password === '20september2003') {
+    window.location.href = 'index2.html'; // Redirect to success page
+  } else {
+    alert('SALAH WOIIII!');
+  }
+}
+</script>
+</head>
+<body>
+
+<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+  <div class="w3-display-topleft w3-padding-large w3-xlarge">
+    from : Ojan & Brili
+  </div>
+  <div class="w3-display-middle w3-center">
+  <h1 style="font-size: 3rem; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);font-weight: bold;">hiii!</h1>
+
+
+    <hr class="w3-border-grey" style="margin:auto;width:40%">
+    <form onsubmit="checkPassword(event)">
+      <input id="password" class="w3-input w3-border w3-round" type="password" placeholder="tgl lahir ojan" name="wish" required style="width:70%;margin:auto;">
+      <button class="w3-button w3-green w3-round w3-margin-top" type="submit">Submit</button>
+    </form>
+  </div>
+  <div class="w3-display-bottomleft w3-padding-large">
+    Yogyakarta, 31 Mei 2024 <a href="https://www.w3schools.com/w3css/default.asp" target="_blank"></a>
+  </div>
+</div>
+
+</body>
+</html>
